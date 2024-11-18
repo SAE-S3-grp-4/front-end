@@ -131,3 +131,21 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+
+/* test */
+.my-element {
+    background-color: #1E2E71;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.policeHeader {
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 143.203%; /* 45.825px */
+}
