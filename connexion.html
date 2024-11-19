@@ -5,21 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/CSS/connexion.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="my-element">
-        <div class="policeHeader">
-            Accueil
-            Événements
-            Boutique
-            Logo
-            Agenda
-            Présentation
-            Compte
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#evenements">Événements</a></li>
+                <li><a href="#boutique">Boutique</a></li>
+                <li>
+                    <div class="logo">
+                        <img src="/img/logo.svg" alt="ADIIL">
+                    </div>
+                </li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#connexion">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="form-box">
+            <a href="#" class="retour">Retour</a>
+            <h1>Connexion</h1>
+            <form>
+                <div class="input-group">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" id="username" placeholder="Nom d’utilisateur">
+                    <a href="#" class="link"> Nom d'utilisateur oublié ?</a>
+                </div>
+                <div class="input-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" placeholder="Mot de passe">
+                    <a href="#" class="link">Mot de passe oublié ?</a>
+                </div>
+                <button type="submit" class="btn">Se connecter</button>
+                <p class="register">Pas encore de compte ? <a href="#">Inscris-toi !</a></p>
+            </form>
         </div>
     </div>
-    <p>Hello World</p>
-    
 </body>
 </html>

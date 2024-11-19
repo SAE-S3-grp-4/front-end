@@ -1,0 +1,109 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(112deg, #13154D 13.13%, #2C31B2 96.9%);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-box {
+    filter: drop-shadow(20px 50px 100px rgba(113, 246, 255, 0.25));
+    border-radius: 45px;
+    border: 1px solid rgba(23, 32, 117, 0.50);
+    background: linear-gradient(180deg, rgba(255, 72, 215, 0.25) 0%, rgba(234, 234, 234, 0.25) 100%);
+    padding: 20px 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left;
+}
+
+.input-group input {
+    width: 396px;
+    height: 79px;
+    flex-shrink: 0;
+
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    background: #34448E;
+
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.43);
+    font-size: 25px;
+}
+
+.input-group .link {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 0.8rem;
+    color: #a5d6fd;
+    text-decoration: none;
+}
+
+.input-group .link:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 281px;
+    height: 64px;
+
+    border-radius: 50px;
+    background: rgba(115, 154, 255, 0.80);
+
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 143.203%;
+}
+
+.btn:hover {
+    background: #357ABD;
+}
+
+.register {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.register a {
+    color: #a5d6fd;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+.retour {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #a5d6fd;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
