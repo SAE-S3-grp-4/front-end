@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arborescence simple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .arborescence {
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #eaf0f6;
+        }
+        .arborescence h2 {
+            margin: 0;
+            font-size: 16px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .arborescence ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        .arborescence li {
+            margin: 5px 0;
+            position: relative;
+        }
+        .arborescence li::before {
+            content: "▶";
+            position: absolute;
+            left: -15px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .arborescence li.open::before {
+            content: "▼";
+        }
+        .arborescence li ul {
+            display: none;
+        }
+        .arborescence li.open ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="arborescence">
+    <h2>LISTE DES RESSOURCES</h2>
+    <ul>
+        <li class="folder">
+            Étudiants
+            <ul>
+                <li>Liste A</li>
+                <li>Liste B</li>
+            </ul>
+        </li>
+        <li class="folder">
+            Enseignants
+            <ul>
+                <li>Mathématiques</li>
+                <li>Sciences</li>
+            </ul>
+        </li>
+        <li class="folder">
+            Salles
+            <ul>
+                <li>Amphithéâtre</li>
+                <li>Salle 101</li>
+            </ul>
+        </li>
+        <li class="folder">
+            Équipements
+            <ul>
+                <li>Projecteurs</li>
+                <li>Ordinateurs</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script>
+    // Toggle pour ouvrir/fermer les sous-dossiers
+    document.querySelectorAll('.arborescence .folder').forEach(folder => {
+        folder.addEventListener('click', function (e) {
+            this.classList.toggle('open');
+            e.stopPropagation(); // Empêche de propager le clic aux parents
+        });
+    });
+</script>
+</body>
+</html>

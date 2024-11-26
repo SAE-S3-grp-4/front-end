@@ -1,19 +1,26 @@
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(112deg, #13154D 13.13%, #2C31B2 96.9%);
-    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    background-image: linear-gradient(rgba(19, 21, 77, 0.4), rgba(44, 49, 178, 0.4)), url("../front-end/img/background2.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .container {
     width: 100%;
     max-width: 400px;
-    margin: 0 auto;
+    margin-left: 30px;
+    margin-right: 25px;
 }
 
 .form-box {
@@ -29,7 +36,7 @@ body {
 
 h1 {
     margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .input-group {
@@ -52,7 +59,7 @@ h1 {
 .input-group .link {
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 4px;
     font-size: 0.8rem;
     color: #a5d6fd;
     text-decoration: none;
@@ -70,7 +77,6 @@ h1 {
     background: rgba(115, 154, 255, 0.80);
 
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 500;
@@ -97,9 +103,16 @@ h1 {
 
 .retour {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    color: #a5d6fd;
+    top: 15px;
+    left: 30px;
+    color: white;
     text-decoration: none;
     font-size: 0.9rem;
 }
+
+.deco1 {
+    margin-top: 500px;
+    z-index: 1;
+}
+
+
